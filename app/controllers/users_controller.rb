@@ -10,14 +10,6 @@ class UsersController < ApplicationController
     end
   end
 
-  def update
-    new_status = @user.active? ? 'inactive' : 'active'
-    @user.update(status: new_status)
-    respond_to do |format|
-      format.js { render 'show', layout: false }
-    end
-  end
-
   private
 
   def user_instance
