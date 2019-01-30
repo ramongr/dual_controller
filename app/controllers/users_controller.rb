@@ -2,7 +2,7 @@
 
 # Users Controller
 class UsersController < ApplicationController
-  before_action :user_instance, only: %i[show update]
+  before_action :user_instance, only: :show
 
   def show
     respond_to do |format|

@@ -6,6 +6,7 @@
 # Installing
 
 - Install [Rails and Ruby](http://gorails.com)
+- Run: `bundle install`
 - Run: `rails db:create db:migrate`
 
 
