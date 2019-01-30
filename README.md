@@ -1,24 +1,14 @@
-# README
+# Requirements
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Ruby 2.6.0
+- Rails 5.2.2
 
-Things you may want to cover:
+# Installing
 
-* Ruby version
+- Install [Rails and Ruby](http://gorails.com)
+- Run: `rails db:create db:migrate`
 
-* System dependencies
 
-* Configuration
+# Boot
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Run `rails s`
