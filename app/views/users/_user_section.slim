@@ -1,0 +1,6 @@
+ul
+  - @user.printable_attributes.each do |attribute|
+    li = "#{attribute} -> #{@user.send(attribute)}"
+
+.row
+  = button_to @user.active? ? 'Deactivate' : 'Activate', user_path(@user), method: :put, remote: true

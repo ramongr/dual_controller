@@ -1,0 +1,8 @@
+.row
+  .col.col-lg-5
+    .d-flex.flex-column-reverse.bd-highlight
+      - @inactive_users.each do |user|
+        = render 'users/user_item', user: user
+  .col.col-lg-7
+    #user-details
+      h3 Click on a user to see their details

@@ -2,5 +2,9 @@
 
 # User model
 class User < ApplicationRecord
-  enum state: { inactive: 0, active: 1 }
+  enum status: { inactive: 0, active: 1 }
+
+  def printable_attributes
+    %i[age name status]
+  end
 end
