@@ -1,0 +1,2 @@
+$('<%= "#user-#{@user.id}" %>').appendTo('<%= "##{@user.status}-users" %>');
+$('#user-details').html('<%= escape_javascript(render("users/user_section", user: @user)) %>');

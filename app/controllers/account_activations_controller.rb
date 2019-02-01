@@ -8,7 +8,7 @@ class AccountActivationsController < ApplicationController
     new_status = @user.active? ? 'inactive' : 'active'
     @user.update(status: new_status)
     respond_to do |format|
-      format.js { render 'users/show', layout: false }
+      format.js { render 'update', layout: false }
     end
   end
 

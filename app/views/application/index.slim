@@ -2,9 +2,18 @@ h1 Multi controller
 
 .row
   .col.col-lg-5
-    .d-flex.flex-column-reverse.bd-highlight
-      - @inactive_users.each do |user|
-        = render 'users/user_item', user: user
+    .col.col-lg-12
+      h4 Inactive Users
+    .col.col-lg-12
+      .d-flex.flex-column-reverse.bd-highlight#inactive-users
+        - @inactive_users.each do |user|
+          = render 'users/user_item', user: user
+    .col.col-lg-12
+      h4 Active Users
+    .col.col-lg-12
+      .d-flex.flex-column-reverse.bd-highlight#active-users
+        - @active_users.each do |user|
+          = render 'users/user_item', user: user
   .col.col-lg-7
     #user-details
       h3 Click on a user to see their details
